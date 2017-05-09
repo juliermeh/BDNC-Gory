@@ -1,0 +1,4 @@
+schema: gory
+workspace: gory
+user: admin
+senha: 12345

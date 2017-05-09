@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<!--
+	Developer: JuliermeH
+-->
+<%@ page import="java.util.*, br.edu.ifpb.bdnc.gory.*" %>
+<jsp:useBean id="pagina" class="br.edu.ifpb.bdnc.gory.entidade.Pagina" />
+<html>
+	<head>
+		<title>Project Góry</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="subpage">
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		
+		<!-- Header -->
+		<header id="header">
+				<div class="inner">
+					<a class="logo"><strong>Góry</strong></a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="sobre.html">Sobre</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Three -->
+			<section id="three" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h2><jsp:getProperty name="pagina" property="titulo"/></h2>
+						<p>Autor: <jsp:getProperty name="pagina" property="autor"/></p>
+					</header>
+					<div class="image round left">
+						<img src="images/pic01.png" alt="Pic 01" />
+					</div>
+					<p><jsp:getProperty name="pagina" property="conteudo" /></p>
+
+					<div class="image round right">
+						<img src="images/pic02.png" alt="Pic 02" />
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+		<div class="inner">
+			<div class="copyright">
+				&copy; Vampire Corporation. Design e Imagens: <a href="https://templated.co">Julierme Jadon</a>.
+			</div>
+		</div>
+	</footer>
+
+	</body>
+</html>

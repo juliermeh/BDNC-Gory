@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!--
+	Developer: JuliermeH
+-->
+<html>
+	<head>
+		<title>Project Góry</title>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="assets/css/main.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<nav id="nav">
+						<a href="generic.html">Generic</a>
+						<a href="sobre.html">Sobre</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+					<div class="inner">
+						<header>
+							<h1>Bem-Vindo ao Góry</h1>
+							<h6>Envie seu conteúdo para publicação já!</h6>
+						</header>
+					<div class="flex ">
+						<form action="bd.jsp" method="post">
+							<a name="id" id="id" href="javascript:gera_id();">Gera ID</a>
+							<div class="field">
+								<input name="titulo" id="titulo" type="text" placeholder="Título">
+							</div>
+							<div class="field">
+								<input name="autor" id="name" type="text" placeholder="Autor">
+							</div>
+							<div class="field">
+								<textarea name="conteudo" id="conteudo" rows="6" placeholder="Conteúdo"></textarea>
+							</div>
+							<div class="image">
+								<label for="image">Template</label>
+								<img src="images/template.png" id="template"/>
+							</div>
+							<div class="field">
+								<label for="databases">Bancos de Dados Disponíveis</label>
+								<input type="radio" name="database" value="0" checked><b>MongoDB</b>
+								<input type="radio" name="database" value="1"><b>Cassandra</b>
+								<input type="radio" name="database" value="2"><b>Redis</b>
+							</div>
+							<ul class="actions">
+								<li><input value="Enviar" class="button alt" type="submit"></li>
+							</ul>
+						</form>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+		<div class="inner">
+			<div class="copyright">
+				&copy; Vampire Corporation. Design e Imagens: <a href="https://templated.co">Julierme Jadon</a>.
+			</div>
+		</div>
+	</footer>
+
+	</body>
+</html>

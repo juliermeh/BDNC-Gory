@@ -1,0 +1,26 @@
+/* @author Julierme Heinstein */
+
+/* Cassandra */
+CREATE KEYSPACE "gory" WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1};
+
+CREATE TABLE Pagina (
+    id int PRIMARY KEY,
+    titulo text,
+    autor text,
+    conteudo text,
+    data text);
+
+/* MongoDB */
+use gory
+
+db.createCollection("Pagina"){ "ok" : 1 }
+
+/* OracleXE */
+CREATE OR REPLACE TYPE Pagina as Object(
+	id number,
+	titulo varchar2(100),
+	autor varchar2(100),
+	conteudo varchar2(4000),
+) not final
+
+INSERT INTO Pagina VALUES (2,);
